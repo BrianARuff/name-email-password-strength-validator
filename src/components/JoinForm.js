@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import FormField from './FormField';
-import EmailField from './EmailField';
 import PasswordField from './PasswordField';
 
 class JoinForm extends Component {
