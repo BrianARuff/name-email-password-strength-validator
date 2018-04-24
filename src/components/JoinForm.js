@@ -28,15 +28,11 @@ class JoinForm extends Component {
                 <form action="/" method="POST" noValidate>
 
                     <div className="d-flex flex-row justify-content-between align-items-center px-3 mb-5">
-                        <legend className="form-label mb-0">Support Team</legend>
+                        <legend className="form-label mb-0">Password Quality</legend>
                         { formValidated && <button type="button" className="btn btn-primary text-uppercase px-3 py-2">Join</button> }
                     </div>
 
                     <div className="py-5 border-gray border-top border-bottom">
-                        <FormField type="text" fieldId="fullname" label="Fullname" placeholder="Enter Fullname" validator={validateFullname} onStateChanged={this.fullnameChanged} required />
-
-                        <EmailField fieldId="email" label="Email" placeholder="Enter Email Address" onStateChanged={this.emailChanged} required />
-
                         <PasswordField fieldId="password" label="Password" placeholder="Enter Password" onStateChanged={this.passwordChanged} thresholdLength={7} minStrength={3} required />
                     </div>
 
